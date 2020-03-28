@@ -1,0 +1,231 @@
+:root {
+	/*Fonts */
+	--main-font-primary: "Oswald", san-serif;
+	--main-font-secondary: "Amatic", raleway;
+	/*colors*/
+	--main-color-gray: #e9e7e8;
+	--main-color-cream: #e9e7e8;
+	--main-color-mint: #c5eae3;
+	--main-color-yellow: #f5f1b6;
+	--main-color-darkgray: #756f70;
+	--main-color-black: #302e2e;
+}
+
+/*Container*/
+#sec_nav {
+	height: 125vh;
+}
+
+/*This is the area of the navigation bar*/
+#sec_nav ul li {
+	color: #ffce00;
+	display: inline-block;
+	height: 80px;
+	line-height: 80px;
+	list-style: none;
+	padding: 0 10px;
+	transition: background 0.5s;
+	font-family: "Oswald", serif;
+	align-items: center;
+}
+
+#sec_skill ul li {
+    color: #ffce00;
+	display: inline-block;
+	height: 80px;
+	line-height: 80px;
+	list-style: none;
+	padding: 0 10px;
+	transition: background 0.5s;
+	font-family: "Oswald", serif;
+	align-items: center;
+    
+}
+
+#sec_head {
+	font-size: 45px;
+	font-family: var(--main-font-primary);
+	color: #f5f1b6;
+	text-shadow: 2px 2px #a19999;
+	text-align: center;
+	padding-top: 5px;
+}
+
+#headline {
+	font-family: var(--main-font-secondary);
+	color: white;
+	font-weight: 525;
+    font-size: 20px;
+	text-align: center;
+    text-shadow: 1px 1px #a19999;
+}
+
+#subheadline {
+	font-family: "Amatic", raleway;
+	color: var(--main-color-darkgray);
+	text-align: center;
+    font-size: 16px;
+}
+
+.headers {
+	font-size: 30px;
+	font-family: "Oswald", san-serif;
+	color: #756f70;
+	text-shadow: 2px 2px #c5eae3;
+}
+
+#aboutbody {
+	font-family: var(--main-font-secondary);
+	font-size: 15px;
+	text-align: left;
+	color: var(-main-color-darkgray);
+}
+
+body {
+	background-image: url("img/Cell%20Land%20B.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#skillsbody {
+    font-family: var(--main-font-secondary);
+	font-size: 15px;
+	color: var(-main-color-darkgray);
+    
+}
+
+.item_mint {
+    background-color: var(--main-color-mint);
+}
+/*.container-fluid {
+    background-image: url("img/Landing.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: right; 
+    background-repeat: repeat;
+    
+}*/
+    a.btn-primary {
+	   color: var(--main-color-yellow);
+	   background-color: var(--main-color-darkgray);
+	   border-color: var(--main-color-darkgray);
+}
+
+/* mouse over link */
+    #sec_nav a.btn-primary:hover {
+	   color: var(--main-color-white);
+	   background-color: var(--main-color-mint);
+	   border-color: var(--main-color-mint);
+	   box-shadow: none;
+}
+    #biopic {
+        height: 225px;
+        align-content: center;
+    }
+
+@media (min-width: 576px) /* Landscape for cell */ {
+    #sec_nav {
+        height: 100vh;
+        
+    }
+	#sec_head {
+		padding: 0px;
+		font-size: 65px;
+	}
+    body {
+        background-image: url("img/Landing-Landscape-Cell.jpg");
+	   background-size: cover;
+	   background-repeat: no-repeat;
+}
+	
+    #aboutbody {
+        font-family: var(--main-font-secondary);
+        font-size: 15px;
+        text-align: left;
+        color: var(-main-color-darkgray);
+    }
+
+}
+
+    /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	html {
+		font-size: 100%;
+	}
+    
+    body {
+        background-image: url("img/Landing.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sec_head {
+        font-size: 65px;
+        font-family: var(--main-font-primary);
+        color: #f5f1b6;
+        text-shadow: 2px 2px #a19999;
+        text-align: center;
+        padding-top: 5px;
+}
+        
+        
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	/* Font size - increase on larger device screen sizes */
+	 
+    #sec_nav {
+        height: 100vh;
+        
+    }
+    body {
+        background-image: url("img/Landing%202-01.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    
+    }
+	#sec_head {
+		padding: 0px;
+		font-size: 90px;
+	}
+    #headline {
+        font-family: var(--main-font-secondary);
+        color: white;
+        font-weight: 525;
+        font-size: 45px;
+        text-align: center;
+        text-shadow: 1px 1px #a19999;
+    }
+    #subheadline {
+        font-family: "Amatic", raleway;
+        color: var(--main-color-darkgray);
+        text-align: center;
+        font-size: 30px;
+    }
+    .headers {
+        font-size: 45px;
+        font-family: "Oswald", san-serif;
+        color: #756f70;
+        text-shadow: 2px 2px #c5eae3;
+    }
+	#biopic {
+        height: 350px;
+        align-content: center;
+    }
+    #aboutbody {
+        font-family: var(--main-font-secondary);
+        font-size: 20px;
+        text-align: left;
+        color: var(-main-color-darkgray);
+    }
+    #skillsbody {
+        font-family: var(--main-font-secondary);
+        font-size: 20px;
+        text-align: left;
+        color: var(-main-color-darkgray);
+        margin-left: 20px;
+}
+    
+    /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    }

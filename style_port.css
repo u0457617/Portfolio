@@ -1,0 +1,164 @@
+:root {
+	/*Fonts */
+	--main-font-primary: "Oswald", san-serif;
+	--main-font-secondary: "Amatic", raleway;
+	/*colors*/
+	--main-color-gray: #e9e7e8;
+	--main-color-cream: #e9e7e8;
+	--main-color-mint: #c5eae3;
+	--main-color-yellow: #f5f1b6;
+	--main-color-darkgray: #756f70;
+	--main-color-black: #302e2e;
+}
+
+
+
+body {
+	background-image: url("img/Portfolio%20Cell-01.png");
+    background-size:cover;
+	background-repeat: no-repeat;
+}
+
+nav_item {
+    color: var(--main-color-yellow);
+    background-color: var(--main-color-darkgray);
+    border-color: var(--main-color-darkgray);
+    padding: 10px;
+    
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#sec_head {
+    font-size: 65px;
+	font-family: var(--main-font-primary);
+	color:var(--main-color-darkgray);
+	text-align: center;
+	padding-top: 5px;
+
+}
+
+#sec_nav ul li {
+	color: #ffce00;
+	display: inline-block;
+	height: 80px;
+	line-height: 80px;
+	list-style: none;
+	padding: 0 10px;
+	transition: background 0.5s;
+	font-family: "Oswald", serif;
+	align-items: center;
+    
+}
+
+a.btn-primary {
+	   color: var(--main-color-yellow);
+	   background-color: var(--main-color-darkgray);
+	   border-color: var(--main-color-darkgray);
+}
+
+/* mouse over link */
+    #sec_nav a.btn-primary:hover {
+	   color: var(--main-color-white);
+	   background-color: var(--main-color-mint);
+	   border-color: var(--main-color-mint);
+	   box-shadow: none;
+}
+
+.cont_item {
+    padding-top: 50px;
+    height:125px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cont_item h5{
+    color:var(--main-color-darkgray);
+    font-family: var(--main-font-secondary);
+    
+}
+
+.item_yellow {
+    background-color:var(--main-color-yellow);
+    background-size:cover;
+}
+
+
+
+.item_gray {
+    background-color: var(--main-color-gray);
+}
+
+.item_mint {
+    background-color: var(--main-color-mint);
+}
+
+.item_white {
+    background-color:#FFFFFF;
+}
+
+.sec_cl:hover{
+    background-image:url(img/Classroom%20Learning.jpg);
+}
+@media (min-width: 576px) /* Landscape for cell */ {
+    #sec_nav {
+        height: 100vh;
+        
+    }
+	#sec_head {
+		padding: 0px;
+		font-size: 65px;
+        text-align: center;
+	}
+    body {
+    background-image: url("img/Port%20Land%20Cell-01.png");
+	   background-size: cover;
+	   background-repeat: no-repeat;
+    }
+        
+@media (min-width: 768px) {
+	 html {
+		font-size: 100%;
+	}
+    
+    
+    #sec_nav {
+        height: 100vh;
+        
+    }
+    
+    body {
+        background-image: url(img/Portfolio%20Ipad.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    }
+    
+    /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	/* Font size - increase on larger device screen sizes */
+	 
+    #sec_nav {
+        height: 100vh;
+        
+    }
+    body {
+        background-image: url("img/Port%20Land%20Cell-01.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+   #sec_head {
+    font-size: 65px;
+	font-family: var(--main-font-primary);
+	color: #f5f1b6;
+	text-align: center;
+	padding-top: -20px;
+       
+
+}
+    
+    }
+    
